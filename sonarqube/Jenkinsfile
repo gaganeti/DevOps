@@ -1,7 +1,8 @@
 pipeline{
     agent any
     environment {
-        PATH = "C:/Users/prave/Downloads/apache-maven-3.8.4-bin/apache-maven-3.8.4/bin"
+        PATH = "${M2_HOME}/bin:${PATH}"
+
     }
     stages{
        stage('GetCode'){
